@@ -14,10 +14,10 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows:  repeat(5, 0.3fr);
+  grid-template-rows:  repeat(2, 0.3fr);
   width: 30%;
   margin: 0 auto;
-  border-color: whitesmoke;
+  border: 5px solid gray;
 }
 
 .grid-container .resume-img {
