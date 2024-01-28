@@ -238,15 +238,18 @@ main .phone p {
   margin-top: 20px;
 }
 
+main .email {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 main .email span {
   color: white;
   font-size: 40px;
-  grid-column: 3/4;
-  grid-row: 4/5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   margin-top: 20px;
 }
 
@@ -254,23 +257,21 @@ main .email p {
   color: white;
   font-size: 25px;
   font-family: 'Roboto Mono', monospace;
+  margin-top: 20px;
+}
+
+main .location {
   grid-column: 3/4;
   grid-row: 4/5;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
 }
 
 main .location span {
   color: white;
   font-size: 40px;
-  grid-column: 3/4;
-  grid-row: 4/5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 20px;
 }
 
@@ -278,11 +279,6 @@ main .location p {
   color: white;
   font-size: 25px;
   font-family: 'Roboto Mono', monospace;
-  grid-column: 3/4;
-  grid-row: 4/5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 20px;
 }
 
