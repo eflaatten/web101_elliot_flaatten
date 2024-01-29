@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: black;
 }
 
 .main-container {
@@ -200,6 +201,7 @@ main .education-summary {
   align-items: center;
   margin-left: 50px;
   width: 70%;
+  padding-bottom: 100px;
 }
 
 main .contact-header {
