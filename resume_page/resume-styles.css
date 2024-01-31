@@ -55,11 +55,12 @@ main {
   height: calc(100% - 60px);
   background-color: rgb(17, 17, 17);
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 0.5fr 2fr;
   grid-template-rows: repeat(7, 1fr);
 }
 
 .image-container {
+  background-color: rgb(0, 2, 54);
   grid-column: 1/2;
   grid-row: 1/2;
   display: flex;
@@ -73,8 +74,10 @@ main {
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center;
   transition: opacity 0.3s ease;
   margin-top: 20px;
+  
 }
 
 .image-container:hover img {
@@ -112,6 +115,7 @@ main .resume-title {
 }
 
 main .job-title {
+  background-color: rgb(0, 2, 54);
   color: white;
   font-size: 40px;
   font-family: 'Merriweather', serif;
@@ -120,6 +124,8 @@ main .job-title {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 main .experience-header {
@@ -205,44 +211,48 @@ main .education-summary {
 }
 
 main .contact-header {
+  background-color: rgb(0, 2, 54);
   color: white;
   font-size: 35px;
   font-family: 'Merriweather', serif;
-  grid-column: 3/4;
-  grid-row: 1/2;
+  grid-column: 1/2;
+  grid-row: 3/4;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 230px;
+  margin-top: 0;
   margin-bottom: 0;
+}
+
+main .phone {
+  background-color: rgb(0, 2, 54);
+  color: white;
+  font-size: 40px;
+  grid-column: 1/2;
+  grid-row: 4/5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
 }
 
 main .phone span {
   color: white;
+  margin-top: 0;
   font-size: 40px;
-  grid-column: 3/4;
-  grid-row: 2/3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
 }
 
 main .phone p {
   color: white;
   font-size: 25px;
   font-family: 'Roboto Mono', monospace;
-  grid-column: 3/4;
-  grid-row: 2/3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
 }
 
 main .email {
-  grid-column: 3/4;
-  grid-row: 3/4;
+  background-color: rgb(0, 2, 54);
+  grid-column: 1/2;
+  grid-row: 5/6;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -263,8 +273,9 @@ main .email p {
 }
 
 main .location {
-  grid-column: 3/4;
-  grid-row: 4/5;
+  background-color: rgb(0, 2, 54);
+  grid-column: 1/2;
+  grid-row: 6/7;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -282,6 +293,14 @@ main .location p {
   font-size: 25px;
   font-family: 'Roboto Mono', monospace;
   margin-top: 20px;
+  text-wrap: balance;
+  text-align: center;
+}
+
+main .empty-cell {
+  grid-column: 1/2;
+  grid-row: 7/8;
+  background-color: rgb(0, 2, 54);
 }
 
 @media (max-width: 430px) {
