@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .about-container section.top {
@@ -44,6 +45,34 @@ body {
 .about-container #more-button span {
   margin-left: 10px;
   font-size: 50px;
+}
+
+.return {
+  grid-column: 5/6;
+  grid-row: 3/4;
+  display: flex;
+  align-self: end;
+  justify-self: end;
+}
+
+.return #scroll-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+  font-family: 'Sixtyfour', sans-serif;
+  cursor: pointer;
+  margin-right: 35px;
+  margin-bottom: 15px;
+}
+
+.return #scroll-up:hover {
+  color:rgb(0, 255, 76);
+  font-size: 16px;
 }
 
 .bottom-container {
