@@ -2,9 +2,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <title>About</title>
-</head>
+  <link rel="stylesheet" href="./about.css">
+  <script src="./aboutScript.js"></script>
 <body>
-  
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about_page/about.html">About</a></li>
+      <li><a href="../resume_page/resume.html">Resume</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <p>Elliot Flaatten</p>
+  </nav>
+
+  <div class="about-container">
+    <section class="top">
+      <h1>About Page</h1>
+      <button id="more-button" onclick="handleClick(this)">
+        <p>More</p>
+        <span class="material-symbols-outlined">
+          expand_more
+          </span>
+      </button>
+    </section>
+  </div>
+
+  <div class="bottom-container">
+    <!-- <div class="image-container">
+      <img src="../img/portfolio_picture.jpeg" alt="picture of me(elliot)">
+      <p class="hover-text">Elliot Flaatten</p>
+    </div> -->
+
+    <section class="text-container">
+      <h2>Who am I?</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odit, ab quisquam autem eum tempore esse rerum nisi quam facilis aut voluptates beatae minus iusto non cum, illo at obcaecati.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odit, ab quisquam autem eum tempore esse rerum nisi quam facilis aut voluptates beatae minus iusto non cum, illo at obcaecati.
+      </p>
+    </section>
+  </div>
+
 </body>
 </html>
