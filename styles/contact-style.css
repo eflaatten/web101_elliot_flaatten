@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  display: flex;
+}
+
+form {
+  margin: auto;
+  background-color: rgba(48, 48, 48, 0.452);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.form-group {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.form-group input:required {
+  border: 1px solid red;
+}

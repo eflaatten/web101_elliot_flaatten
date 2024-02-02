@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="../styles/contact-style.css">
+  <script src="../scripts/contact.js"></script>
+</head>
+<body>
+  <form action="results.html" method="GET" enctype="multipart/form-data">
+    <div class="form-group">
+      
+      <label for="fname">First Name</label>
+      <input id="fname" type="text" name="fname">
+      
+      <label for="lname">Last Name</label>
+      <input id="lname" type="text" name="lname">
+      
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" required>
+
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" min="1" max="200" step="5">
+      
+      <label for="birthdate">Birthdate</label>
+      <input type="date" name="date" id="date" min="2019-06-10">
+    </div>
+    <button id="submit" onClick="handleSubmit()">Submit</button>
+    
+  </form>
+</body>
+</html>

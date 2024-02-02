@@ -214,5 +214,29 @@ main p {
   display: block;
 } */
 
+@media (max-width: 1620px) {
+  .about-container section.top {
+    font-size: 60px;
+  }
 
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
+  }
+
+  .bottom-container .text-container {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 50%;
+  }
+
+  .bottom-container .return #scroll-up{
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
 
