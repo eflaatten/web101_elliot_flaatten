@@ -3,30 +3,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/contact-style.css">
-  <script src="../scripts/contact.js"></script>
+  <script src="../scripts/scripts.js"></script>
 </head>
 <body>
   <form action="results.html" method="GET" enctype="multipart/form-data">
-    <div class="form-group">
-      
-      <label for="fname">First Name</label>
-      <input id="fname" type="text" name="fname">
-      
-      <label for="lname">Last Name</label>
-      <input id="lname" type="text" name="lname">
-      
-      <label for="email">Email</label>
-      <input id="email" type="email" name="email" required>
 
-      <label for="age">Age</label>
-      <input type="number" name="age" id="age" min="1" max="200" step="5">
-      
-      <label for="birthdate">Birthdate</label>
-      <input type="date" name="date" id="date" min="2019-06-10">
+    <div class="left-col">
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone">
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" name="password">
+      </div>
     </div>
-    <button id="submit" onClick="handleSubmit()">Submit</button>
-    
+
+    <div class="middle-left-col">
+
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="1" max="200" step="5">
+      </div>
+
+      <div class="form-group">
+        <label for="date">Birthdate</label>
+        <input type="date" name="date" id="date" min="01-01-1900">
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <div>
+
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male">
+        </div>
+        <div>
+
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="female">
+        </div>
+        <div>
+
+          <label for="other">Other</label>
+          <input type="radio" name="gender" id="other" value="other">
+        </div>
+      </div>
+    </div>
+
+    <div class="middle-right-col">
+
+      <div class="form-group">
+        <label for="eyeColor">Eye Color</label>
+        <select name="eyeColor" id="eyeColor" multiple>
+          <option value="Green">Green</option>
+          <option value="Red">Brown</option>
+          <option value="Red">Blue</option>
+          <option value="Red">Hazel</option>
+          <option value="Red">Black</option>
+        </select>
+      </div>
+
+      Favorite Foods
+      <div class="form-group">
+        <label for="banana">Banana</label>
+        <input type="checkbox" name="banana" id="banana">
+      </div>
+
+      <div class="form-group">
+        <label for="apple">Apple</label>
+        <input type="checkbox" name="apple" id="apple">
+      </div>
+
+      <div class="form-group">
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color">
+      </div>
+    </div>
+
+    <div class="right-col">
+      <div class="form-group">
+        <label for="file">File</label>
+        <input id="file" type="file" name="file">
+      </div>
+
+      <div class="form-group">
+        <label for="bio">Bio</label>
+        <textarea id="bio" name="bio"></textarea>
+      </div>
+    </div>
+
+    <div class="bottom-buttons">
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </div>
   </form>
 </body>
 </html>
