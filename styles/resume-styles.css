@@ -7,52 +7,9 @@ body {
   height: 100vh;
 }
 
-nav {
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row-reverse;
-  padding: 0 30px;
-  background-color: rgb(40, 40, 40);
-}
-
-nav p {
-  color: white;
-  font-size: 24px;
-  font-family: 'Roboto Mono', monospace;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  width: 500px;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-nav ul li:hover a {
-  cursor: pointer;
-  color: rgb(0, 183, 255);
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 24px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-family: 'Roboto Mono', monospace;
-}
-
 main {
-  height: calc(100% - 60px);
+  /* height: calc(100% - 60px); */
+  height: 100vh;
   background-color: rgb(17, 17, 17);
   display: grid;
   grid-template-columns: 0.5fr 2fr;
@@ -293,7 +250,6 @@ main .location p {
   font-size: 25px;
   font-family: 'Roboto Mono', monospace;
   margin-top: 20px;
-  text-wrap: balance;
   text-align: center;
 }
 
