@@ -1,5 +1,16 @@
-// contact.html
+// about.html
+handleClick = () => {
+  const bottomContainer = document.querySelector('.bottom-container')
+  bottomContainer.scrollIntoView({behavior: "smooth"})
+}
 
+scrollToTop = () => {
+  const aboutContainer = document.querySelector('.about-container')
+  aboutContainer.scrollIntoView({behavior: "smooth"})
+}
+
+
+// contact.html
 const placeForResults = document.getElementById("results")
 
 new URLSearchParams(window.location.search).forEach((value, name) => {
@@ -17,15 +28,5 @@ document.getElementById("form").addEventListener("submit", (event) => {
   console.log("Form submitted")
 })
 
-// about.html
-handleClick = () => {
-  const bottomContainer = document.querySelector('.bottom-container')
-  bottomContainer.scrollIntoView({behavior: "smooth"})
-}
-
-scrollToTop = () => {
-  const aboutContainer = document.querySelector('.about-container')
-  aboutContainer.scrollIntoView({behavior: "smooth"})
-}
 
 
